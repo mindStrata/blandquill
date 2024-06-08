@@ -12,7 +12,10 @@ const Footer = () => {
           </Link>
         </div>
         <div className="p-2 cursor-pointer rounded-xl hover:bg-zinc-200">
-          <Link href={"#"} target="_blank">
+          <Link
+            href={"https://github.com/mindStrata/blandquill"}
+            target="_blank"
+          >
             <Github size={22} />
           </Link>
         </div>
