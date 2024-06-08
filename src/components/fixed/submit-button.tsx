@@ -1,0 +1,25 @@
+"use client";
+
+import { useFormStatus } from "react-dom";
+
+type Props = {
+  text?: string;
+  loadingText?: string;
+};
+
+export function SubmitButton({
+  text = "Add",
+  loadingText = "Adding...",
+}: Props) {
+  const { pending } = useFormStatus();
+
+  return (
+    <button
+      type="submit"
+      className="text-white w-full md:w-fit bg-blue-700 hover:bg-blue-800 focus:ring-blue-300 font-semibold rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800"
+      disabled={pending}
+    >
+      {pending ? loadingText : text}
+    </button>
+  );
+}
