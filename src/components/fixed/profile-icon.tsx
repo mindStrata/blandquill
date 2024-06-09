@@ -59,7 +59,7 @@ const ProfileIcon = async () => {
                 "bg-green-700": user?.name?.charAt(0) === "Z",
               })}
             >
-              B
+              {user.name.charAt(0).toUpperCase()}
             </div>
           </Dropdownmenu>
         </div>

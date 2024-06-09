@@ -1,6 +1,6 @@
 ## Introduction
 
-_BlandQuill_ is a blog website. Here we provide blogs regarding technology, education, film and sports.
+**BlandQuill** is a blogging website. Here we provide blogs regarding technology, education, film and sports.
 
 ## Tech stack or tools of `BlandQuill`
 
