@@ -2,7 +2,7 @@
 
 **BlandQuill** is a blogging website. Here we provide blogs regarding technology, education, film and sports.
 
-## Tech stack or tools of `BlandQuill`
+## Tech stack or tools of BlandQuill
 
 1. Programmming language: TypeScript
 2. User Interface(U/I): Tailwind CSS & shadcn/ui
