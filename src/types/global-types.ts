@@ -1,5 +1,18 @@
 //Global types for the blog
-import { Role, Verified } from "@prisma/client";
+import { Category, Role, User, Verified } from "@prisma/client";
+
+export interface Blog {
+  id: string;
+  title: string;
+  description: string;
+  author: string;
+  category: Category;
+  image?: string;
+  createdAt: Date;
+  updatedAt: Date;
+  user?: User;
+  userId?: string;
+}
 
 export interface BlogDataType {
   id?: string | number;

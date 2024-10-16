@@ -1,20 +1,21 @@
 import SVG from "@/../../public/no-data.svg";
-import { getAllBlogs } from "@/actions/get-all-blogs";
+// import { getAllBlogs } from "@/actions/get-all-blogs";
 import BlogCard from "@/components/card";
+import BlogPosts from "@/components/client/getblogs";
 import BlogCategory from "@/components/fixed/blog-category";
 import Spinner from "@/components/fixed/spinner";
 import WorkingPage from "@/components/fixed/working-page";
 import { Suspense } from "react";
 
 const Page = async () => {
-  const blogs = await getAllBlogs();
+  // const blogs = await getAllBlogs();
 
   return (
     <main className="container mx-auto flex flex-col justify-center px-4 md:px-8 gap-1 lg:px-14">
       <div className="my-7">
         <BlogCategory title="All Posts" />
 
-        {blogs?.length === 0 ? (
+        {/*  {blogs?.length === 0 ? (
           <div>
             <WorkingPage
               title="No blog yet!"
@@ -48,7 +49,9 @@ const Page = async () => {
               </div>
             </Suspense>
           </div>
-        )}
+        )} */}
+
+        <BlogPosts />
       </div>
     </main>
   );
