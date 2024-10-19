@@ -13,6 +13,7 @@ import { Category, User } from "@prisma/client";
 import { Dot } from "lucide-react";
 import Link from "next/link";
 import React, { useEffect, useState } from "react";
+import Spinner from "../fixed/spinner";
 
 const BlogPosts: React.FC = () => {
   const [posts, setPosts] = useState<Blog[]>([]);
@@ -53,12 +54,13 @@ const BlogPosts: React.FC = () => {
       {/* <button onClick={fetchPosts}>Fetch Posts</button>{" "} */}
       {/* Trigger fetch on click */}
       {loading && (
-        <div className="flex items-center space-x-4">
-          <Skeleton className="h-12 w-12 rounded-full" />
+        <div className="flex justify-center space-x-4">
+          <Spinner />
+          {/* <Skeleton className="h-12 w-12 rounded-full" />
           <div className="space-y-2">
             <Skeleton className="h-4 w-[250px]" />
             <Skeleton className="h-4 w-[200px]" />
-          </div>
+          </div> */}
         </div>
       )}
       {error && <p>Error: {error}</p>}
