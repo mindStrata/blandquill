@@ -3,6 +3,10 @@
 # Another line
 # Another new line
 # Aoother sign line
+```ts
+const message: string | null = "Hello User"
+```
+
 #### **1. List All Remote Branches**:
 
 To see all the available branches in the remote repository, use:
