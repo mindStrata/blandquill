@@ -1,6 +1,7 @@
 ### **Minimal Documentation: Pull a Branch from GitHub**
 # Add new line
 # Another line
+# Another new line
 #### **1. List All Remote Branches**:
 
 To see all the available branches in the remote repository, use:
